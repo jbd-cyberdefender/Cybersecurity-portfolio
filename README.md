@@ -41,6 +41,7 @@ Key areas demonstrated:
 ### Security Operations & Detection
 
 - Splunk
+- Wazuh
 - SIEM
 - Detection Engineering
 - Security Event Analysis
@@ -73,6 +74,8 @@ Key areas demonstrated:
 ### Programming & Automation
 
 - Python
+- C
+- C++
 - C#
 - PowerShell
 - SPL
@@ -81,21 +84,53 @@ Key areas demonstrated:
 
 Additional projects will be added as I continue developing my cybersecurity skills.
 
-## Certifications
+### Detection & Blue Team
 
-CompTIA Security+ (SY0-701)
-Earned August 2026
+- [x] Active Directory Password Spray Detection
+- [ ] SOC Home Lab
+- [ ] Splunk Detection Engineering
+- [ ] Windows Attack & Detection Lab
+- [ ] Security Automation
 
-## Education
+### Offensive Security
 
-University of Missouri — Columbia
+- [ ] Hack The Box Writeups
+- [ ] Network Enumeration Labs
+- [ ] Web Application Security Labs
+- [ ] Active Directory Attack Labs
 
-Bachelor of Science in Information Technology
-Expected May 2027
+### Security Engineering
 
-Contact
+- [ ] Python Security Tools
+- [ ] Detection Automation
+- [ ] Log Analysis Tools
+- [ ] Security Monitoring Projects
 
-Joshua Bassey-Duke
+## Approach
 
-GitHub: jbd-cyberdefender
-LinkedIn: Joshua Bassey-Duke
+My projects are designed around more than simply running tools.
+
+I focus on understanding the complete security lifecycle:
+
+```text
+Generate malicious behavior
+        ↓
+Collect telemetry
+        ↓
+Understand the logs
+        ↓
+Develop detection logic
+        ↓
+Generate an alert
+        ↓
+Investigate the activity
+        ↓
+Determine scope and impact
+        ↓
+Contain the threat
+        ↓
+Validate the response
+        ↓
+Document findings
+        ↓
+Improve the detection
