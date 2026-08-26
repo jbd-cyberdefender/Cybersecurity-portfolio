@@ -1,0 +1,33 @@
+/*
+Detection: Active Directory Password Spray
+
+Purpose:
+Detect multiple failed authentication attempts from a single
+source IP against multiple distinct Active Directory accounts.
+
+Telemetry:
+Windows Security Event ID 4625
+
+Key fields:
+- Source_Network_Address
+- Account_Name
+- EventCode
+
+Logic:
+- 5+ failed authentications
+- 5+ distinct targeted accounts
+- Grouped by source IP
+
+MITRE ATT&CK:
+T1110.003 - Password Spraying
+
+Severity:
+High
+*/
+
+index=windows host="DC01" EventCode=4625
+| stats count AS failures dc(Account_Name) AS distinct_users values(Account_Name) AS targeted_users by Source_Network_Address
+| where distinct_users >= 5 AND failures >= 5
+| eval detection="Potential Active Directory Password Spray"
+| table Source_Network_Address failures distinct_users targeted_users detection
+| sort - distinct_users

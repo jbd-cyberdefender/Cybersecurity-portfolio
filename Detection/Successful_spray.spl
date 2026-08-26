@@ -1,0 +1,25 @@
+/*
+Detection: Successful Authentication from Password Spray Source
+
+Purpose:
+Identify successful authentication events originating from a
+source associated with password-spray activity.
+
+Telemetry:
+Windows Security Event ID 4624
+
+Key fields:
+- Source_Network_Address
+- Account_Name
+- EventCode
+
+MITRE ATT&CK:
+T1110.003 - Password Spraying
+
+Severity:
+Critical / High depending on account sensitivity
+*/
+
+index=windows host="DC01" EventCode=4624 Source_Network_Address="172.16.0.101"
+| stats count values(Account_Name) AS successful_accounts by Source_Network_Address
+| table Source_Network_Address count successful_users successful_accounts detection
