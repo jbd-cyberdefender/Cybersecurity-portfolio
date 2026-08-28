@@ -43,8 +43,8 @@ index=windows EventCode=4720 OR EventCode=4732
 
 ## Evidence
 
-> Add your Splunk screenshot here showing EventCode 4720 and 4732 detections
-
+![Account Creation](../screenshots/account-creation-cmd.png
+)
 ---
 
 ## Cleanup
