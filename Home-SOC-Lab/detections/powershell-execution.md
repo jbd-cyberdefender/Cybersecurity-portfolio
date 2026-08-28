@@ -74,7 +74,7 @@ index=windows source="WinEventLog:Microsoft-Windows-PowerShell/Operational"
 
 ## Evidence
 
- ![Splunk screenshot showing suspicious PowerShell EventCode 4688 detections](/screenshots/powershell-execution.png)
+ ![Splunk screenshot showing suspicious PowerShell EventCode 4688 detections](../screenshots/powershell-execution.png)
 
 ---
 
