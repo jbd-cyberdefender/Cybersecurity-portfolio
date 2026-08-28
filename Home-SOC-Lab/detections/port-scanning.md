@@ -58,7 +58,7 @@ index=sysmon EventCode=3
 
 ## Evidence
 
-![Port Scan shown on Splunk](/screenshots/port-scan-splunk.png)
+![Port Scan shown on Splunk](../screenshots/port-scan-splunk.png)
 
 ---
 
