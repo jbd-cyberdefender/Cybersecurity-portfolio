@@ -40,7 +40,7 @@ Port 445 (SMB over TCP): High-risk vector for unauthenticated SYSTEM-level remot
 Port 3389 (RDP - Remote Desktop Protocol): Exposed to pre-authentication remote code execution  password spraying/brute-force credential attacks, and post-exploitation desktop session hijacking (tscon.exe).
 
 # Evidence
-![nmap port scan ran on Kali Linux](/screenshots/port-scan-nmap.png)
+![nmap port scan ran on Kali Linux](../screenshots/port-scan-nmap.png)
 ---
 
 ## Splunk Detection Query
