@@ -7,7 +7,7 @@
 | **MITRE Tactic** | Discovery / Privilege Escalation |
 | **MITRE Technique** | T1069 — Permission Groups Discovery / T1033 — System Owner Discovery |
 | **Event ID** | 4672 — Special Privileges Assigned / 4688 — Process Creation |
-| **Severity** | 🟡 Medium |
+| **Severity** | Medium |
 | **Tool Used** | Windows built-in commands |
 | **Source** | W11SOC — local execution |
 | **Target** | W11SOC (192.168.250.129) |
@@ -52,7 +52,7 @@ index=windows EventCode=4688
 
 ## Evidence
 
-> Add your Splunk screenshot here showing privilege enumeration detections
+![Privilege Escalation](../screenshots/privilege-escalation.png)
 
 ---
 
