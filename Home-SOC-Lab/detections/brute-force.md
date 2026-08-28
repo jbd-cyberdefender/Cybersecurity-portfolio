@@ -47,7 +47,7 @@ index=windows EventCode=4625
 
 ## Evidence
 
-> Add your Splunk screenshot here showing EventCode 4625 detections
+![brute force detection](../screenshots/brute-force-splunk.png)
 
 **Key Fields to Observe:**
 - `Source_Network_Address` — attacker IP (192.168.250.130)
