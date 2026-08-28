@@ -9,8 +9,8 @@
 | **Event ID** | 4625 — An account failed to log on |
 | **Severity** | 🔴 High |
 | **Tool Used** | xfreerdp3 |
-| **Source** | Kali Linux (192.168.250.130) |
-| **Target** | Windows 11 (192.168.250.129) |
+| **Source** | Kali Linux (192.168.250.129) |
+| **Target** | Windows 11 (192.168.250.130) |
 
 ---
 
@@ -50,7 +50,7 @@ index=windows EventCode=4625
 ![brute force detection](../screenshots/brute-force-splunk.png)
 
 **Key Fields to Observe:**
-- `Source_Network_Address` — attacker IP (192.168.250.130)
+- `Source_Network_Address` — attacker IP (192.168.250.129)
 - `Account_Name` — targeted account (administrator)
 - `Logon_Type` — 3 (network logon)
 - `count` — number of failed attempts
