@@ -30,9 +30,9 @@ done
 
 **Detection EventID:** 4625
 
-![RDP brute force command on kali](/screenshots/brute-force-attack.png)
+![RDP brute force command on kali](../screenshots/brute-force-attack.png)
 
-![ Detection on splunk](/screenshots/brute-force-splunk.png)
+![ Detection on splunk](../screenshots/brute-force-splunk.png)
 
 ---
 
@@ -48,7 +48,7 @@ nmap -sS --script=vuln 192.168.250.129
 # Quick port check
 nmap -p 3389,445,80,443,22 192.168.250.129
 ```
-![nmap scan](/screenshots/port-scan-nmap.png)
+![nmap scan](../screenshots/port-scan-nmap.png)
 
 **Detection EventID:** Sysmon EventCode 3
 
@@ -90,7 +90,7 @@ net user
 
 **Detection EventID:** 4672, 4688
 
-![Privilege Escalation](/screenshots/privilege-escalation.png)
+![Privilege Escalation](../screenshots/privilege-escalation.png)
 
 ---
 
@@ -108,7 +108,7 @@ net localgroup administrators
 # Cleanup after lab
 net user hacker /delete
 ```
-![Account Creation](/screenshots/account-creation-splunk.png)
+![Account Creation](../screenshots/account-creation-splunk.png)
 
 **Detection EventID:** 4720, 4732
 
@@ -125,7 +125,7 @@ wevtutil cl Security
 
 **Detection EventID:** 1102 (Security log cleared), 104 (System log cleared)
 
-![Log clearing](/screenshots/log-clearing-splunk.png)
+![Log clearing](../screenshots/log-clearing-splunk.png)
 
 ---
 
