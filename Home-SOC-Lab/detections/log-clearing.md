@@ -47,7 +47,7 @@ index=windows EventCode=1102 OR EventCode=104
 
 ## Evidence
 
- ![Splunk screenshot here showing EventCode 1102 log clearing detection](/screenshots/log-clearing-splunk.png)
+ ![Splunk screenshot here showing EventCode 1102 log clearing detection](../screenshots/log-clearing-splunk.png)
 
 ---
 
