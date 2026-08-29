@@ -114,9 +114,9 @@ downloaded `.eml` files:
   instead of the claimed sending domain. It did **not** reach "Likely
   Phishing," which is expected and explained below under Limitations.
 
-  [Output of the phishing sample](./screenshots/phishing-sample-output.png)
+  ![Output of the phishing sample](./screenshots/phishing-sample-output.png)
 
-  [Output of the outlier_AI email](./screenshots/Outlier.AI-email-output.png)
+  ![Output of the outlier_AI email](./screenshots/Outlier.AI-email-output.png)
 
 ## Usage
 
