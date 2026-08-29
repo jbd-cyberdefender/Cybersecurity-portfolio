@@ -91,6 +91,9 @@ in seconds:
   actually catches a failure that `re.search()` alone would have missed
   → 4, Suspicious
 
+
+  ## Results
+
 **Real-world validation**, run through `analyze_email.py` against actual
 downloaded `.eml` files:
 
