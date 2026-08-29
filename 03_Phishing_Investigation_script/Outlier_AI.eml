@@ -1,0 +1,406 @@
+Delivered-To: joshuadukie11@gmail.com
+Received: by 2002:a05:6f02:cac8:b0:12a:7bb9:2d9a with SMTP id t8csp573685rcg;
+        Thu, 27 Aug 2026 18:33:46 -0700 (PDT)
+X-Received: by 2002:a05:6a21:3947:b0:3cc:9288:99aa with SMTP id adf61e73a8af0-3d26329db5amr7042092637.0.1787880825683;
+        Thu, 27 Aug 2026 18:33:45 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1787880825; cv=none;
+        d=google.com; s=arc-20260327;
+        b=j/YbIhVr0EZHOWc7t5t+b3rUP6mCyB82CMCkBsgahyh6aGyWPMTpQ6WTRqoOdXvhgj
+         fjdSIrFEbhetV9MrmKVD8pViRH1TT/Ao3TmUkFgnFd0VJQoItCfcQsl3a74Ij7de0g85
+         5FEe2AyiEZlkUYHSW4Mx9DjII0r5Pld7U+097T3bcmHgMBdUXrNk3JDxHiMFiyO9q20k
+         WTsuKc2jfecTdUWOH8QorVgK71u8zdJeYmeXjtfASn++s571w/Gu+HwkSR3J0G30farg
+         8golZ6lRoCuOzYlgRY+pwmG9c9ZTmZ7vX6EFVL1vXrYDYgGY7cpUampFTmW49+zR8p4v
+         Mb3w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=list-unsubscribe-post:list-unsubscribe:to:subject:message-id
+         :mime-version:from:date:content-transfer-encoding:dkim-signature
+         :dkim-signature;
+        bh=9BQkFzCwRJc8ufvC/HkqS70MNq05X2I5b4xqXNrTq5Y=;
+        fh=h1L+lnpjT5qUbVOGcka3oRyXJHUJMIyTxYP5QzH/18Q=;
+        b=p4cFMHsOoULotojwYEKSdKPpAcMau9RiCeNFETWeZMLLHNME1vbSZW+MqOwNIjXDMI
+         AC9862gSSpzWAv0w04OKPsE5qpPCj5KZvv4r3Mm2AZt9IZygczK8WeZNPaheFB+npVFu
+         kF+pT2S4DIGEVbq3m7m1swuaJquvX0WcAXC5wGy7de4ftCHLnDST8uAvzrs2oTRSEB22
+         tx1oJSPlXCx23ivEthzaB0Qu0kY5kgrnTm1d+pMTZ+dJWt4s/Duzxur0rVbzGdEp+9Q1
+         aOXHlhq0gCE9AyWKkQuadkgPzARokjbZoOnA3jH8i00g5c9jqtTZBx3YWsOS/Ae0nFIA
+         iPXA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@outlier.ai header.s=s1 header.b="NLjGd+1/";
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=sOerAt4l;
+       spf=pass (google.com: domain of bounces+2212641-6a01-joshuadukie11=gmail.com@em528.outlier.ai designates 159.183.0.108 as permitted sender) smtp.mailfrom="bounces+2212641-6a01-joshuadukie11=gmail.com@em528.outlier.ai";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=outlier.ai
+Return-Path: <bounces+2212641-6a01-joshuadukie11=gmail.com@em528.outlier.ai>
+Received: from wfbthhsc.outbound-mail.sendgrid.net (wfbthhsc.outbound-mail.sendgrid.net. [159.183.0.108])
+        by mx.google.com with ESMTPS id 41be03b00d2f7-cc1f3731b53si214327a12.372.2026.08.27.18.33.45
+        for <joshuadukie11@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 27 Aug 2026 18:33:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+2212641-6a01-joshuadukie11=gmail.com@em528.outlier.ai designates 159.183.0.108 as permitted sender) client-ip=159.183.0.108;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@outlier.ai header.s=s1 header.b="NLjGd+1/";
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=sOerAt4l;
+       spf=pass (google.com: domain of bounces+2212641-6a01-joshuadukie11=gmail.com@em528.outlier.ai designates 159.183.0.108 as permitted sender) smtp.mailfrom="bounces+2212641-6a01-joshuadukie11=gmail.com@em528.outlier.ai";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=outlier.ai
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=outlier.ai;
+	h=content-transfer-encoding:content-type:date:from:mime-version:subject:
+	to:list-unsubscribe:list-unsubscribe-post:cc:content-type:date:
+	feedback-id:from:subject:to;
+	s=s1; t=1787880824;
+	bh=9BQkFzCwRJc8ufvC/HkqS70MNq05X2I5b4xqXNrTq5Y=;
+	b=NLjGd+1/zrB4h2/2dyfce8fJFCHR/EQNnXZRl8PuukgznBFh3fJHMOkBmfLZ5MCvoIR0
+	+1KiXvB1r/HbFEOATRITlm3rsLeo3DzTakrE5dtHICy32luiPdoiMK5SyhOoNuGZNKqazq
+	wcFyh9w0bSgscyo3np0blFPrwlM3iY0aI7Qww9b6t+MrVUfOf87d2mTt/4mnvNZ3NWHGGK
+	wIZXgfrTpesqaw57mtmJjX2fWssOA4XhQNfr6nRiHbyHONGwOuDaZ40m4MIplr3oTFaQz6
+	rpA9U0z3VkWtCnOVGQqvDwQVGhT7De2zUBSIOSlCPvb0EjXaYSYvz333wRUr68kA==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.info;
+	h=content-transfer-encoding:content-type:date:from:mime-version:subject:
+	to:list-unsubscribe:list-unsubscribe-post:cc:content-type:date:
+	feedback-id:from:subject:to;
+	s=smtpapi; t=1787880824;
+	bh=9BQkFzCwRJc8ufvC/HkqS70MNq05X2I5b4xqXNrTq5Y=;
+	b=sOerAt4la4I06nd4L5Jbdj9hLM+QvovCNUZP6w6qUDMdi7SdmMe7N9eUcvtGBMFovgnA
+	I6eemsAHfAKMBO0P6LHCs1Slm3oTHuYTG36nYbRUwH94U38jNd0/oCpXQK1QCv+EUZCjFt
+	rf9nTcdKE4+MrviC5wPIDvUfdwDj4gYrk=
+Received: by recvd-7584dc4487-jqbkb with SMTP id recvd-7584dc4487-jqbkb-1-6A90E578-66
+	2026-08-28 01:33:44.687420942 +0000 UTC m=+2616026.548972657
+Received: from MjIxMjY0MQ (unknown)
+	by geopod-ismtpd-4 (SG) with HTTP
+	id YIqhmKd4RjyhjTTpg1rigQ
+	Fri, 28 Aug 2026 01:33:44.678 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+Date: Fri, 28 Aug 2026 01:33:44 +0000 (UTC)
+From: Outlier AI <insideoutlier@outlier.ai>
+Mime-Version: 1.0
+Message-ID: <YIqhmKd4RjyhjTTpg1rigQ@geopod-ismtpd-4>
+Subject: Subject: What's something you've taught someone else how to do?
+X-SG-EID: 
+ =?us-ascii?Q?u001=2EVMPt0=2Fm9kto67tqHKPmu5OQN5vhVBjr1yTLCpLOPB=2FWaED44rYWt1E9Zm?=
+ =?us-ascii?Q?Qy4hWxPYYDIoe0M8A+qe3PBMb4dovnsvSaiYfPi?=
+ =?us-ascii?Q?ftv8BfKJUe7sdy7oq4FPFllpXA1yH5AeuV=2F0jYq?=
+ =?us-ascii?Q?F4ztQxAEOL=2F+B0djs0XWcAFynmC8GjJKC1TPIeD?=
+ =?us-ascii?Q?mCxhIEra713VehRfHUi1CM8bjzNFxxEN13fk1VV?=
+ =?us-ascii?Q?C4STNLLgilxxaZQ6Z1VkYUTuY5clwJyPJDttsYl?= =?us-ascii?Q?vl5h?=
+X-SG-ID: 
+ =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3Bn0=2F1wqYKdPmI+SecjXfzkcN8vxv0NICT+cfd?=
+ =?us-ascii?Q?0lQ=2F3xd7pYAvHT7KRDKx3ATd7n+jh6OG406jlYA?=
+ =?us-ascii?Q?eplfRltL4tr=2FB9rAT8M2yf7sHj5Pttd5S9hDmA5?=
+ =?us-ascii?Q?ym06P1qdNnckPLJHQnOBRqTmB9bdifIARjaI=3D?=
+To: joshuadukie11@gmail.com
+X-Entity-ID: u001.iC7Op0uP6N8VlGsEj+vFyQ==
+List-Unsubscribe:
+ <https://u2212641.ct.sendgrid.net/lu/unsubscribe?oc=u001.YvI-2u1H3DueMolqBrwRWvNcccnnGOKIFinWCo4Oi51EUMvx5ArBmDZpjhI6vCqw3mNFbRMZC2CGpy8nd7ocVRnlQ_hhX_EAH59FublqA-mgT8Boxdv7SwG71oggveux7Z7ZKERuye01z0LpNrRAR5qGJCawC--sJM1q_uS924iOWYtRuCgva42ZHXcX4fLimNHsPc_2kCHl8Q4VgpDbF_Ec30FptTYWgxSMp4GuAFyqPEVabTYuwssvYdSpAbfLzBFD6JFIONobyeXzkENvUJSDWP4spPGP3w_JMbwWdCmBhFtkLqRira2TIbn2XYsHz7nt9unwypQvZ9biAw4LAmqydngMWwExAW10R8lR91Fx-6HKpluXctfJ_Ko--7bBLc99hc7MbTc93rZVt8ruEk4-zBIpzIHHHdRX36qReP0ogvrm2DguRjina3ZE84lAfbbihHWbYUozOL6k-GuU-QqF74zRAp6AZ2qdyrf6qF4nRGDkbF31SSBXrKjzwLZhqMJa1C7YG75aLk0FE9Dce3a4wPQxaFevniNTaLHc8FQ2GN3B-2LvorfU_PvjGAp_TIhFQdNcHQY4ilQlpjIqjkYk1MrBTykqsL4lHFOgbMBUC5WtVuqE9kFTwMO8Dq0SpQ2NVuQ8zvk5ZaoGlWqRfaVCuEVu307_3YzpXstv1WojK6bv0OFz1nWtd0G9v2EFiFVMm2kuH5h6b_dJNDijV2Rh2xmr9GPUO6lUqUtEcUzmWBhYRBAw6tJSEpIqYDQ1nYMW4W6u7f7E0sZLkW31OGa1gBolGunKhNZq6OiI7iA>,
+ <mailto:unsubscribe@em528.outlier.ai?subject=2212641.6iUFJ82r2Ex6joh2CanqkE42JrIIVoKJGYKBhOC02F1oMDAwdTAwMAGI-csZx5wvXdc-oG7cbtq_9XNEka7So0xV0tEMdahK1_HPg5c5L4UvP-asq22j2exIthP5cb5irg0gepmuUCzqFDFXOxIIgXZ9uOTPgCywM8LTj0Fe3BloouHoRLB1mg==.DMOvjV2Q6KNn5lagKql9LBsMwQPdVW1DVxW3rHh-YKFoMDAwdTAwMIxECfzo0kPAc0gs5a0usT6ZleWDgIJsosqACEnST6gIddejVHL5um8L9sMUXQLEj2ODCgeRz_K5mGCUGkHZwWHkz0FcP3awdrJ0p8Cq2zBCmHHNQaHoXbwJmlJ-t0mtLwcnak6ytrDF8GUGNsbjm-xTfueTnXKc8tgwMRYUiIUvIbZ4VpE1j6fcPtW-dB0UrNTBIOP8m0OyqeyLjhjlXwhqKQgONZ7TUeC04AhtiA6jR29e2nW0xMpnpDFoW42TsCi6ccdK6HFHJqsHT7TN5gBjz4JN-WK4FBQ9eZoNQZ-_>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+
+<!doctype html>
+<html>
+<head>
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+    <style media=3D"all" type=3D"text/css">
+        @media only screen and (max-width: 720px) {
+            table[class=3Dbody] h1,
+            table[class=3Dbody] h2,
+            table[class=3Dbody] h3,
+            table[class=3Dbody] h4 {
+                font-weight: 600 !important;
+            }
+            table[class=3Dbody] h1 {
+                font-size: 22px !important;
+            }
+            table[class=3Dbody] h2 {
+                font-size: 18px !important;
+            }
+            table[class=3Dbody] h3 {
+                font-size: 16px !important;
+            }
+            table[class=3Dbody] .content,
+            table[class=3Dbody] .wrapper {
+                padding: 10px !important;
+            }
+            table[class=3Dbody] .container {
+                padding: 0 !important;
+                width: 100% !important;
+            }
+            table[class=3Dbody] .btn table,
+            table[class=3Dbody] .btn a {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+<body style=3D"margin: 0; font-family: -apple-system, system-ui, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-siz=
+e: 14px; width: 100% !important;">
+    <table bgcolor=3D"white" style=3D"box-sizing: border-box; max-width: 70=
+0px; border-collapse: separate !important; margin: 0 auto;">
+        <tbody>
+            <tr>
+                <td style=3D"max-width: 700px; padding: 20px; width: 100%;"=
+>
+                    <!-- Icon Row -->
+                    <h1 style=3D"font-size: 38px; font-weight: 300; margin:=
+ 0; margin-bottom: 30px; border-bottom: 1px solid #f1f1f1; padding-bottom: =
+20px;">
+                        <img src=3D"http://cdn.mcauto-images-production.sen=
+dgrid.net/764579af2201290d/2d0a7de9-228e-441e-8058-2c4cfdbca734/976x250.png=
+" alt=3D"Logo" style=3D"max-width: 86px; height: auto;">
+                    </h1>
+                   =20
+                    <!-- Body Row -->
+                   =20
+                    <div style=3D"font-family: -apple-system, system-ui, Bl=
+inkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; =
+font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 45px;color:=
+ #222222; line-height: 1.5em;">
+                        <p><img src=3D"https://static.remotasks.com/upload/=
+communication-center/2026-03-26/67e1d026125e2e3c0e491c89/io33-header.jpg"><=
+/p><p><strong style=3D"background-color: transparent;">TL;DR</strong></p><u=
+l><li>This week's tip: Why two people following the rules can still end up =
+with a mess<span style=3D"background-color: transparent;">. </span><a href=
+=3D"http://url9405.outlier.ai/ls/click?upn=3Du001.ekXzrh6HTgOsQrpQbkIFH4X6M=
+Xy-2BLyV2xisEBgAhgw1F-2BzNy-2B-2FVoaDk26KolyHoj5dj9aHtx-2FOvcnknTBPnop2texw=
+pDBaKuWrAOJt4LlkJ5P1JkN6oeB-2F6HMFJDGMS9dyu3aD5FCudXnFa136L1ptb3TN-2Bgqrb46=
+IP7YeoGsxiZvJQi-2B2Iz5xYbov-2BGdhzvm9JZUv-2BpjNjgawjg6U-2F4AoycE-2B9mEdsYx3=
+voPtx-2FEnmf-2BZphzh4V4D4NkNxyt3S-2FMhaWBz8qa8uXzskREMPzGAQMTXFo3CGxk3Sle1y=
+kqAw-3DYjMC_KSsBt9ALMI67Qopf0PQgMmH1npuhBqbn694L00VgMxkCpoCgylcD2hUl-2Fvs4n=
+-2FD2kMTM5ZZKowoEWz3831Kcr-2BrvXyfp-2BASuUX-2F51QHjc2zRgp7ZgxPQD5B06yKD11e5=
+ah2bOx-2B-2FzwXUidK1RkXxDYaXIbyaOUCDRREmva0B8q5MiYoxyzD-2FkazilXpipOCSITKiB=
+CprClbITRjt93xwy8pURbpXDwHTuAXfsAvHWF-2FB8GsqzeQg7O1HQnlGLo-2BolR9bI6zGI8R9=
+-2FQzOML-2F-2BzKFhFzKKNUqH-2B-2Fo2b1h1xlDFEUAhok-2B03px64rjH5bAleVTnQrktwfg=
+xTxQj4GmmdHgX1A7Q2sf7J7pgNPfVK8EkyBySv5hlFKOD9dZWwNVj" rel=3D"noopener nore=
+ferrer" target=3D"_blank" style=3D"background-color: transparent; color: rg=
+b(17, 85, 204);"><strong>Check out the course</strong></a></li><li><span st=
+yle=3D"background-color: transparent;">Get paid for creative work you've al=
+ready made. </span><a href=3D"http://url9405.outlier.ai/ls/click?upn=3Du001=
+.ekXzrh6HTgOsQrpQbkIFH1mEoO9FrOdl9CsztttD97vcOgApdRYULD-2BP7rD-2FI33VVjpEAF=
+tvk9KP5-2BW2ieVEVkc8YacUxG9RmaUQ4cYfyHR2-2FDt7-2BQ0iafrxC7KXWBykI1ix3WfyG9-=
+2BVVfoIfpL4TSkk6zmcxRLw-2BcK8SfCqs-2BXE0888KDg2UVr121iOf-2FKS3-2BG-2BRstCdY=
+hxE-2B6Xm69AOwgfI2nQeqgDXtKjmi3scpU-3DPjcv_KSsBt9ALMI67Qopf0PQgMmH1npuhBqbn=
+694L00VgMxkCpoCgylcD2hUl-2Fvs4n-2FD2kMTM5ZZKowoEWz3831Kcry-2BmBjAXH2LBkbJ4U=
+O3UfsyfSLQwOdjIuHWHTvxEYYAGlJ-2FYOtGTJDuLtTogNZ4xtVOAzxe2Bt3keRwL9-2BsD-2BA=
+vhrMNLfyLr9Ut4OXiV2z4n24nytOo9eQ2XRNz5OO-2BKHviMOnZ0o7jSbwy0NATw4IAx7fC2EvT=
+Zgn-2BCaZQhTzyvmOAGku-2F7-2FSCN7CbzvRKT5rBYx-2B7ozIUQZJUofS3Ik3Yzt9tayFR8t2=
+gsCVU5fsBkPmWQ20qyL8bWWJ8vReHIyBK5FHQZeZRqCdpgA5b-2BOac7Lbowst9dtyMXViEPgbP=
+B" rel=3D"noopener noreferrer" target=3D"_blank" style=3D"background-color:=
+ transparent;"><strong>Submit the interest form</strong></a></li><li>Four t=
+op labs ran the same chemistry test and got totally different results, all =
+because of how they stirred.<span style=3D"background-color: transparent;">=
+ </span><a href=3D"http://url9405.outlier.ai/ls/click?upn=3Du001.ekXzrh6HTg=
+OsQrpQbkIFH4wuGW4n-2B1utv7DfQMO8dT1v1ENZsafNDw1uWBkzKLPszJufcqwCX7i4nTSNVvH=
+FNITKoL2BpM1xn0dvhg7ziNMaPS8JVApFYMndF1L4zxO6K0smDMTXXJSgac-2BHNJJ5Qi11tySg=
+YVKO7NSDwyft4qWshPSB8CZqow9pDeLULFGH2ND1jSsYFTQyRH0hP96ggxHJwKbjao30mIsYi-2=
+BBQVxJGU5VdmDjt-2FnfmCwOTeSfP-2BI-2FvWVaeJm6tTgR2LwFxJlK8qsDlUk41n-2FYz3GU-=
+2BkgGd36BQZmZB2XekNQq3Js4nbIqD0IRwJg90984NzRI6kAiqQibsqkYcrADZ1eTA398-3DZcS=
+K_KSsBt9ALMI67Qopf0PQgMmH1npuhBqbn694L00VgMxkCpoCgylcD2hUl-2Fvs4n-2FD2kMTM5=
+ZZKowoEWz3831Kcr-2FDzJjdk42xpYRwLkqKx0RU7ITH80kZSflfnZBp5zuPd0u3jVn6ENKovul=
+b00kCUQZvoX60uHxkQl4GlkAJSW7B9W1lvynXV9ZNrCfzWjMA7J1JAgaw-2FPliA7fNlpLbjKDe=
+fjC5-2Bj1jJnguKYlYuTDKKLSCu3G6HqqjSSrUXCBjfHZh5CI0DpavqzkT5ZI5cHkW7ZkZ7ZoMV=
+rswtIf8u3Y5HvEVMnDr3uux-2B5rbpwV-2FjmjuxxM-2B064412SKATPjaMT0hZVDN4gM9obFdK=
+zTDQQyJYNQtLD-2FO3deVW8Vw4mst" rel=3D"noopener noreferrer" target=3D"_blank=
+" style=3D"background-color: transparent; color: rgb(17, 85, 204);"><strong=
+>Read the study</strong></a></li><li><span style=3D"background-color: trans=
+parent;">What's something you've taught someone else how to do? </span><a h=
+ref=3D"http://url9405.outlier.ai/ls/click?upn=3Du001.ekXzrh6HTgOsQrpQbkIFHw=
+V8mLff5k-2Fe83Wj57jne3XnVTADQYDXXzKwDYb-2BYsXMimrWRibqOLLNTwkHpZAb54w3d-2FK=
+b4dt348D5BdtY8q2RqWpJqao0eNniqtFoea1K7UKda32w0tbyHZuUhAl0m3Ak3As6cEsYZa-2FU=
+N1rJ4D-2B6q2xEY83fj3cKvYdoOX4SAaMuiKgNoGFRKLOXc9BasQjlqocWmVNx0gcV-2BbEbmm5=
+5d86rG3icNyZgnXvciAmd-2B5ilQ-2FW8ljHDJaAKn-2FqU9R-2BVtEZDUd9JKz9lLRxfc7wHAK=
+FiyTj4-2Bi2pyGVJAKN9Ue5na9tq3D15w5EszKxEpw-3D-3DER4D_KSsBt9ALMI67Qopf0PQgMm=
+H1npuhBqbn694L00VgMxkCpoCgylcD2hUl-2Fvs4n-2FD2kMTM5ZZKowoEWz3831Kcr-2FXG56w=
+ev6P08FqnyWyRAiakaAUID5r-2BMNbinmvniHGleX-2FusjLvQu55XAm7VQQ3xdN3HqvLiLlZRC=
+GoX4i51qIadjZfqbvYR0ejcWpgAMjbbg-2B7FlS4OMpsI84xAL21qc3jwx11rqNynnjsC3I3KWb=
+psC-2FWyJYAeEtsbm1mxCgb-2BxnUPYs6cNyJILubGNjYmdI3BFieoC-2FsC-2F32RNnCIGwmku=
+vO8AJl-2B5CbndWeGWdqKDabIpOUub2aaTRPM7YqyJb2NLIBgQE6efO9x3FcSPzd4yJztCaYHjz=
+2kA9u6e3w" rel=3D"noopener noreferrer" target=3D"_blank" style=3D"backgroun=
+d-color: transparent; color: rgb(17, 85, 204);"><strong>Share yours</strong=
+></a></li></ul><p><span style=3D"background-color: transparent;">Hey, it's =
+Eliana.</span></p><p><span style=3D"background-color: transparent;">Squiggl=
+es started doggy daycare this week. Day one, he stood at the door and would=
+n't go in. Day two, same door, same room, same drop-off, and he walked righ=
+t in like he'd been going for months.</span></p><p>Nothing about the place =
+changed. What changed was that he finally knew what to expect. That's the k=
+ey to this week's tip, too: setting clear ground rules upfront prevents tot=
+al chaos later.</p><h2><span style=3D"background-color: transparent;">How t=
+wo careful people can produce incompatible data</span></h2><p>Two taskers c=
+an both be meticulous, follow their instincts, and produce high-quality res=
+ults, yet still end up with outputs that contradict each other. That isn't =
+an issue with effort or skill; it's a structural problem in how information=
+ is formatted. When data is being collected to train AI systems or build or=
+ganized databases, inconsistency creates noise that computers can't easily =
+parse.</p><p>Consistency has to be established up front through strict rule=
+s, rather than relying on reviewers to catch every mismatch later.</p><p>Fo=
+r example, to a human, <em>user_response</em> and <em>userResponse </em>mea=
+n the same thing. To an automated pipeline or software parser, they are two=
+ completely different labels. Picking one format and sticking to it prevent=
+s technical errors down the line.</p><p>It can be tempting to bend a format=
+ting rule "just this once" for a tricky edge case. But every exception sets=
+ a precedent. One slightly off-format record quickly becomes the reference =
+point for the next ten, causing small inconsistencies to compound at scale.=
+</p><p>Want to learn more? <a href=3D"http://url9405.outlier.ai/ls/click?up=
+n=3Du001.ekXzrh6HTgOsQrpQbkIFH4X6MXy-2BLyV2xisEBgAhgw1F-2BzNy-2B-2FVoaDk26K=
+olyHoj5dj9aHtx-2FOvcnknTBPnop2texwpDBaKuWrAOJt4LlkJ5P1JkN6oeB-2F6HMFJDGMS9d=
+yu3aD5FCudXnFa136L1ptb3TN-2Bgqrb46IP7YeoGsxiZvJQi-2B2Iz5xYbov-2BGdhzvx8vgT-=
+2F-2F8SwNECzM-2FgWR5lyYjgU6N4bPHVtI0US3n6wlaKW07oI9WC3Lb0jHugnqGR1busBEQsjv=
+iCx5IuUFbAq-2FzOcvWq8IhOqohdyKxxVg-3D8dh1_KSsBt9ALMI67Qopf0PQgMmH1npuhBqbn6=
+94L00VgMxkCpoCgylcD2hUl-2Fvs4n-2FD2kMTM5ZZKowoEWz3831Kcrwewsrwi4-2Bxg-2FlDR=
+cHEJi3D9BNrSCX23pQx8Zf-2F0WYyVPmQ4jo51sW3JuWg8aHCvsBYDgwURkBRBLuHwUUGxhhoqT=
+6dx0pCfmlsXem42GY5sFaWFqQ4EPeP3WVcbo1oOyLpIY1-2FJcojdYlYDz7OVQPciP87-2Fkf3W=
+5f5HcoLwlDbUR-2BImuwqmL58khSJIJSfrrPVzcNbG1evomNiGr59081TEf9lThc-2BfMy5Mv-2=
+FO9QhcUPnu9aOfXrzCBe-2F97De2Y1kRoMjXwqfD2RHjDJ3GPniz8U9KSnJ2dyWXkXSNaEuyt" =
+rel=3D"noopener noreferrer" target=3D"_blank" style=3D"color: rgb(17, 85, 2=
+04); background-color: transparent;"><strong>Check out the full course =E2=
+=86=92</strong></a></p><h2><span style=3D"background-color: transparent;">=
+=EF=BB=BFWant to earn from a creative project you've already finished?</spa=
+n></h2><p>We're collecting creative work paired directly with the original =
+assignment, brief, or request that kicked it off. Whether it's a client job=
+, a class project, or a personal experiment, we want to show how the initia=
+l constraints shaped the final result, and you can get paid for sharing it.=
+</p><p><span style=3D"background-color: transparent;">We're looking for ent=
+ries across graphic design, 3D modeling and CAD, architecture and interior =
+design, industrial and product design, audio and music, video production, a=
+nimation and motion, game development, web and app design, and marketing an=
+d advertising.</span></p><h2><span style=3D"background-color: transparent;"=
+>What distance made visible</span></h2><p>Last week, we asked when a situat=
+ion finally made sense after you stepped back from it. Here are a few highl=
+ights from your replies:</p><ul><li><strong>Sandra B.</strong> spent years =
+climbing the corporate ladder until she missed her son's student-of-the-yea=
+r ceremony for a routine call with her boss. Stepping back gave her the per=
+spective to realize her priorities had shifted, and she quit two months lat=
+er.</li><li><strong>James S.</strong>, a forklift operator, spotted a cowor=
+ker about to drop a heavy load 30 feet up =E2=80=94 a danger invisible from=
+ the other driver's seat. Physical distance gave him the angle needed to st=
+op an accident.</li><li><strong style=3D"background-color: transparent;">Ya=
+smin K.</strong><span style=3D"background-color: transparent;"> was standin=
+g in front of a blob of paint she couldn't make sense of. She stepped back =
+almost to the opposite wall, and a cathedral peeled itself into view: Monet=
+'s </span><em style=3D"background-color: transparent;">Le portail, brouilla=
+rd matinal</em><span style=3D"background-color: transparent;">. She says it=
+ still moves her to tears.</span></li></ul><p><a href=3D"http://url9405.out=
+lier.ai/ls/click?upn=3Du001.ekXzrh6HTgOsQrpQbkIFHwV8mLff5k-2Fe83Wj57jne3XnV=
+TADQYDXXzKwDYb-2BYsXMT46XNXYdxvQe70glImHxEdDN9-2BpwdWqIEZhcFozcSv5p6qkWRAVg=
+smJk92Q4NSRkvKnTrIaUSYCmpfFbuO2x3lKqDrzIteBUw-2FnjY6WX3hidrIOrKFWtOS4UScsgl=
+VNvHsvBXY5ohF0K1AbwvFVmtH34rbFtDAYsmzILwditj-2FE5duFISB79QdwiOpEKdSGKaxrm0p=
+GrSRrjwTiPhXwYSIZ5fSYQmogiJviimwgmyAeLToFjzZ76h8zv8G4pwlOWRcYLtU7fsAfipch1p=
+nVkIkH7J99PSOtOSW4rmJf2laM-3Dt36d_KSsBt9ALMI67Qopf0PQgMmH1npuhBqbn694L00VgM=
+xkCpoCgylcD2hUl-2Fvs4n-2FD2kMTM5ZZKowoEWz3831Kcr53-2BPqk5Bf10xgD7sUr2GWdkph=
+uihG8dc6aOp1Kbcb5dXTC3y27MaTkKQxZQNOYa8AVpRsYv0F1DAJz58YY7LLMn61q8WEVIJIvx-=
+2BZETyARWGsX22E2vPdJbJI3wGn1Z2RTsjjNNldLOa430z040mAZ55JRmYNv5fHgruFrzwO8Z26=
+tzopUPTBc-2BR1GPXsAwP1PGj2N8VGEdDomTtf5fZXmBB1S3wvlJNON-2FJU6JKNN0c4EFs0Y1t=
+Cn9wyobCe3Y1fd-2BosSAUsej14Pxri6XvJoSzxk0r1eQmKZlcDfQdVJC" rel=3D"noopener =
+noreferrer" target=3D"_blank" style=3D"color: rgb(17, 85, 204); background-=
+color: transparent;"><strong>Read the whole thread =E2=86=92</strong></a></=
+p><h2><span style=3D"background-color: transparent;">Four labs, one experim=
+ent, four different answers</span></h2><p>Researchers at four major univers=
+ities set out to run the exact same chemistry experiment: using a special c=
+hemical reaction to help make synthetic fuel.</p><p>Despite following the s=
+ame recipe, all four labs got completely different outcomes. The surprising=
+ culprit? How vigorously each team stirred the liquid.</p><p>Stirring chang=
+ed the physical environment of the reaction, meaning the labs weren't actua=
+lly running the exact same test after all. One team's "normal stir" was ano=
+ther team's "vigorous shake," and that unwritten habit created huge gaps in=
+ their data.</p><p>When scientists upload this data to train an AI, the AI =
+doesn't know stirring speed was the missing variable. It just sees four lab=
+s running the "same" experiment with four contradictory outcomes. Instead o=
+f learning real chemistry, the AI learns useless noise.</p><p>The study was=
+ published in <em>Nature Catalysis</em> this month. </p><p><a href=3D"http:=
+//url9405.outlier.ai/ls/click?upn=3Du001.ekXzrh6HTgOsQrpQbkIFH4wuGW4n-2B1ut=
+v7DfQMO8dT1v1ENZsafNDw1uWBkzKLPszJufcqwCX7i4nTSNVvHFNITKoL2BpM1xn0dvhg7ziNM=
+aPS8JVApFYMndF1L4zxO6K0smDMTXXJSgac-2BHNJJ5Qi11tySgYVKO7NSDwyft4qWshPSB8CZq=
+ow9pDeLULFGH2ND1jSsYFTQyRH0hP96ggxHJwKbjao30mIsYi-2BBQVxLOShadO9mbxT2GlCTbB=
+Qt4Lnbylz3E4afYEFlx3s-2BBggilo-2FtUtCM4yCfhTE8xt3X92mfbVb29sQttpzMHDE3hGrDa=
+cBr04cEBsB85qx-2FXDbNlsCcRlBWQVgs-2FI6ZlwII-3DDoBB_KSsBt9ALMI67Qopf0PQgMmH1=
+npuhBqbn694L00VgMxkCpoCgylcD2hUl-2Fvs4n-2FD2kMTM5ZZKowoEWz3831Kcr0TI6AD8oiH=
+RAiBSktomx4VjzskqTtrOTzf9Y36ReTpQilK0ZAwqqmmqWCxbjp-2BCwFDJuR7sAiUmONOCh53C=
+q1MfjBumf2VtwOtW-2F-2Fc5alSv-2FnsHRu-2FxgfujXld7-2FpJFEmEulh-2FJf8UB-2Bs95c=
+jxE-2B87hDEuSMovfV8YqxYVRV0kbYDF-2Fkb6m1JEORf5HXSgpwNzBbi3xb4Y9JDqQuPxcfC6z=
+IyTHz2hdImjYqbE8ofHq7tLYxNSP6xA88GI3KLJNufnAB3GY4XJA62WXPg-2FNWzF0Le4DxC-2B=
+8eZR90kj5tXPU" rel=3D"noopener noreferrer" target=3D"_blank" style=3D"color=
+: rgb(17, 85, 204); background-color: transparent;"><strong>Read the study =
+=E2=86=92</strong></a></p><h2><span style=3D"background-color: transparent;=
+">Hit reply</span></h2><p><span style=3D"background-color: transparent;">Wh=
+at's something you've taught someone else how to do?</span></p><p><span sty=
+le=3D"background-color: transparent;">Mine's teaching a friend how to let a=
+n AI tool run their to-do list, so it does the remembering instead of them.=
+</span></p><p><span style=3D"background-color: transparent;">Hit reply, or =
+</span><a href=3D"http://url9405.outlier.ai/ls/click?upn=3Du001.ekXzrh6HTgO=
+sQrpQbkIFHwV8mLff5k-2Fe83Wj57jne3XnVTADQYDXXzKwDYb-2BYsXMimrWRibqOLLNTwkHpZ=
+Ab54w3d-2FKb4dt348D5BdtY8q2RqWpJqao0eNniqtFoea1K7UKda32w0tbyHZuUhAl0m3Ak3As=
+6cEsYZa-2FUN1rJ4D-2B6q2xEY83fj3cKvYdoOX4SAaMuiKgNoGFRKLOXc9BasTj9BBNmruUXff=
+43Qp8nhylFyJBSfwjmq3k9f9L7DEBEbgwE5-2F2T-2FdOHUH8WD-2BfLJFTPr1PdooaKBbNOak9=
+vIi14q8ozHbaUHX-2FUvukgzABZigoW_KSsBt9ALMI67Qopf0PQgMmH1npuhBqbn694L00VgMxk=
+CpoCgylcD2hUl-2Fvs4n-2FD2kMTM5ZZKowoEWz3831KcrzfJPyIem3-2FOWViqcWSHR6P-2FIu=
+1KawCwrlIUQAov1fwa-2B6GfoKZt4SNC5bV9eTD1r6Ob8RVF7yYdY2hKFIaUcuI9qXOmQKmdlmV=
+a40zRb-2Bni0wfrVRmQclw0AlItEaWFE6TVv3gcBnTtzSoPAcKji08qU-2FzroYew0RkcZzBS1T=
+bjAdriWBlqvV0kA5LzWLp5Ft4g4D7OG6fnAnsMJOMY-2FdrIrAGWMVDpdjGLytdpgY2WScFW7lg=
+ncov4Pr7At-2FT2IwIuBfkbDAOkVDc3CA4apRQnWJiGu0CD-2FX4kw0582ilQ" rel=3D"noope=
+ner noreferrer" target=3D"_blank" style=3D"background-color: transparent; c=
+olor: rgb(17, 85, 204);"><strong>drop it in the community =E2=86=92</strong=
+></a></p><p><span style=3D"background-color: transparent;">Bracing for day =
+three, </span></p><p><span style=3D"background-color: transparent;">Eliana<=
+/span></p>
+                    </div>
+                   =20
+                    <!-- Privacy Row -->
+                    <div style=3D"text-align: center; font-size: 10px; colo=
+r: rgb(128, 128, 128); line-height: 1.5em;">
+                        Our privacy policy can be found at <a href=3D"http:=
+//url9405.outlier.ai/ls/click?upn=3Du001.ekXzrh6HTgOsQrpQbkIFH3a3hLgV6XqHBz=
+yVhQ3kpPQcQvsCnkHa3T513N-2BxYrah71RBY-2BbVlKe2ZCh1lb-2FimCDBP4SKePj-2FZGjg8=
+F2vpUqLEdsbF9pnupxVHT6h5-2FwFkdcSraoDOCID8RPyJ-2Fb0zA-3D-3Df7Lz_KSsBt9ALMI6=
+7Qopf0PQgMmH1npuhBqbn694L00VgMxkCpoCgylcD2hUl-2Fvs4n-2FD2kMTM5ZZKowoEWz3831=
+Kcr9qaAtud-2Frp3eDAqvIDBQmSA-2BKx5FSfGhPnDPWMkMRPgXtH5T-2BJU2UK4iSU9Er0UH8q=
+obr6MK0z2Ey5kkrLpuauzZx9MLDIEp-2B5J7otR8PI5zlfFxx6RUXhu0rX91CzD99ulw2rE-2F8=
+RZgmlwabgoZGiaFj8OF6P0XBpzdnTuD1b37Dt4aaTg2RIpV0s8JX3C3Cnmx-2B7NTC2vdkHlyRi=
+8jvDdMZGq9PdRSO-2Fq9v0M-2B040iz-2B4nQ1XLDumRKa3LY-2Bl1W3R1WsUEo9IG7c1voLfs-=
+2Bmql-2FlNgLD1Pr2luNMuRM7q" style=3D"color: rgb(128, 128, 128);">https://ou=
+tlier.ai/legal/privacy-policy</a>.
+                        If you have questions about this Privacy Policy, pl=
+ease contact us at <a href=3D"mailto:privacy@outlier.ai" style=3D"color: rg=
+b(128, 128, 128);">privacy@outlier.ai</a> or by mail at: Attn: Privacy, 650=
+ Townsend, San Francisco, CA 94103.
+                    </div>
+                   =20
+                    <!-- Unsubscribe Row -->
+                    <div style=3D"text-align: center; font-size: 10px; colo=
+r: rgb(128, 128, 128); line-height: 1.5em;">
+                       <a href=3D"http://url9405.outlier.ai/asm/unsubscribe=
+/?user_id=3D2212641&amp;data=3DGVEjgpWOvbMOKok5fcbZZRiCa2GNZ6xz5tA3C-Eby6to=
+MDAwdTAwMNY9SCfrPPHvJ6EoC8YH9nmEh7wzaPlVUMu1gqi4PVzT5i4eJ8NTdL6jWlTJNQ2hpoF=
+zNd6YGTt1wPFNutI9fv6ykNAZS_0pRVkHGqbqdqg0MFBs-PdYfKSrrSTYGVBFrG0Y1eRC__a8xl=
+GZa7C6UIUjnfh7hLH9TMzQk9qHsP5wy0k0CDPbbLxER7AeeqNwnVxSELG2YID_5xk3PS1cAbNzh=
+F72H2Q45_ve8HmkUQ2hgDCfJGqj3UMtUN_GQ0J9zJfuBx2mtietvhtEj8P4ohyUSgOP2V1s98ig=
+LHLVSQlECpn3arZw7e2yCKZgiqv7Z35uLv2dPH0z0Dz5KaA5tXzeNLTqEM49zm9G4JUHfhyq8ge=
+C2SanXx2d4MLNIZk9jxL7k_VLUJ_XcpGU_drJZT62j4D2J_t_oLhWPB20lSU_q_gyjwb69DuOht=
+Ac7MF1WvpFFyGpmLi9ZDqg1bs039k=3D" style=3D"color: rgb(128, 128, 128);">Unsu=
+bscribe</a> |=20
+                                        <a href=3D"http://url9405.outlier.a=
+i/ls/click?upn=3Du001.ekXzrh6HTgOsQrpQbkIFH1gpufYUDgN8PE5rkYYYxSoD-2BMYu4cA=
+YFjwMxJ5HFOHVrhfQDt9OzaOW7NMpkhy23Utt-2F7TGvYIAZVnaHV6IPywvUl2ZHOxvffllUu7Z=
+ebIe32oAzmEE6VOaYYRWbZSjiA99UYhx42UdcitcZG3Mo3mgIMhqy8JpJRuWb8uBrQoZzWun_KS=
+sBt9ALMI67Qopf0PQgMmH1npuhBqbn694L00VgMxkCpoCgylcD2hUl-2Fvs4n-2FD2kMTM5ZZKo=
+woEWz3831Kcr-2BSmspwldn8UuA6xPvLvrocTzLJBtjSySAQiD51zctJ9bqKe7u7-2Ffi-2B-2F=
+dcnZikNOlA4YlSwLpOgX55Pcqj607mV1O6e7H8TzZBniijfPJdeqSHHR4V0MgDuLuSwk-2BZWNc=
+uLhwlTEfnUKurUAyIBQ2wYSjSwsg72xP6gFyJIk9E6EyXyW5qK84FvLFYUdEoea2-2FfXGqgsze=
+PV3-2FGRsTqAHzVHw6EeKEv4uUzAIvrBtMeNeaNwul-2BKnjVdZxNPa-2BsfRDXpbQoPg9ItJey=
+4Sm727mQtry2EQKjLZGENOC452Mr-2B" style=3D"color: rgb(128, 128, 128);">Manag=
+e preferences</a>.
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+<img src=3D"http://url9405.outlier.ai/wf/open?upn=3Du001.Ygwx4Kd61VxLKYXgSm=
+qRjfOCnq8l8IMMLXqcZ8oN2LpWVbjSIswq6w9H3y9gmbwGX867dXDZ2MFaP6DkapnpFzKgV8NoP=
+uqyfEVTJnNA9O0wLBpc7nhuDOyn17ADnjfF0L-2BO45mbTfvkOEPypz6Y-2FK0QaFJ3hZ7iI6HD=
+WUY1A6fBGsXuICllx8gvdOhhYAXJFVNOE-2FXHJ2XXF9S8Ax8G-2Bfud6gjbumbzmOraVngYaDV=
+3oV15IrJZyzi9PGuR8K2Rw4899nAYupVq8KvuV0wsUxToni-2Bi4pthMSOcVopHpf9BMI2az-2F=
+5Pr2StBoNeIOqD9zfcu51giuFGFMUDpEJiexE-2BhqGBNIKjXLAIl2vd02Nys72CC1qawW8uHyi=
+aD0Aw" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !=
+important;width:1px !important;border-width:0 !important;margin-top:0 !impo=
+rtant;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !i=
+mportant;padding-top:0 !important;padding-bottom:0 !important;padding-right=
+:0 !important;padding-left:0 !important;"/></body>
+</html>
