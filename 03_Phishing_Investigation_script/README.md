@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Phishing Header Analyzer
 
 A Python tool I built to parse raw email headers, extract indicators of
@@ -111,6 +111,10 @@ downloaded `.eml` files:
   instead of the claimed sending domain. It did **not** reach "Likely
   Phishing," which is expected and explained below under Limitations.
 
+  [Output of the phishing sample](./screenshots/phishing-sample-output.png)
+
+  [Output of the outlier_AI email](./screenshots/Outlier.AI-email-output.png)
+
 ## Usage
 
 ```
@@ -121,11 +125,6 @@ Download any email as `.eml`:
 - **Gmail:** open the email → ⋮ menu → **Download message**
 - **Outlook:** open the email → File → **Save As** → choose `.eml`
 
-To run the regression tests after changing `parser.py`:
-
-```
-python test_parser.py
-```
 
 ## Known limitations
 
@@ -160,102 +159,3 @@ python test_parser.py
   `analyze_email.py`'s output
 - Replace the "last two labels" domain comparison with a proper
   public-suffix-list-aware comparison
-=======
-# Joshua Bassey-Duke | Cybersecurity Portfolio
-
-Welcome to my cybersecurity portfolio.
-
-I am an Information Technology student at the University of Missouri focused on cybersecurity, detection engineering, SOC operations, Active Directory security, network security, and offensive security.
-
-This repository documents hands-on projects where I build, attack, monitor, investigate, and secure realistic environments.
-
-## Featured Projects
-
-### 01 — Active Directory Password Spray Detection & SOC Response
-
-**Focus:** Active Directory | Splunk | Detection Engineering | SOC Analysis | Incident Response
-
-Built and investigated a simulated Active Directory password-spray attack using a multi-machine lab environment.
-
-The project follows a complete SOC workflow:
-
-**Attack → Telemetry → Detection → Alert → Investigation → Containment → Validation → Documentation**
-
-Key areas demonstrated:
-
-- Active Directory domain administration
-- Windows Security Event Log analysis
-- Password-spray attack simulation
-- Splunk SIEM investigation
-- SPL detection engineering
-- Authentication event analysis
-- Alert creation and severity configuration
-- Source IP identification
-- Incident containment using Windows Firewall
-- Post-containment validation
-- Detection improvement opportunities
-
-[View Project →](./01-AD-Splunk-Password-Spray/)
-
----
-
-## Skills & Technologies
-
-### Security Operations & Detection
-
-- Splunk
-- Wazuh
-- SIEM
-- Detection Engineering
-- Security Event Analysis
-- Incident Investigation
-- Alert Triage
-- Incident Response
-
-### Windows & Active Directory
-
-- Active Directory
-- Windows Server
-- Windows 11
-- Security Event Logs
-- Event ID 4624
-- Event ID 4625
-- PowerShell
-- Windows Firewall
-- Sysmon
-
-### Offensive Security
-
-- Kali Linux
-- Hack The Box
-- Nmap
-- Network Enumeration
-- SMB
-- Web Security
-- Attack Simulation
-
-### Programming & Automation
-
-- Python
-- C
-- C#
-- PowerShell
-- SPL
-
-## Portfolio Roadmap
-
-Additional projects will be added as I continue developing my cybersecurity skills.
-
-## Certifications
-CompTIA Security+
-
-## Education
-University of Missouri
-
-Bachelors of Science in Information Technology
-
-Expected Graduation: May 2027
-
-## Social Links
-Linkedin - https://www.linkedin.com/in/joshuabassey-duke/
->>>>>>> 7f51b615c0440e8cdb216ef52e364a594d90a8d9
