@@ -19,7 +19,7 @@ The project is split into three files, each with a distinct job:
 
 ### 1. Parsing headers
 
-`analyze_email.py` reads the raw source of an `.eml` file and hands it to
+analyze_email.py reads the raw source of an `.eml` file and hands it to
 Python's built-in `email` module, which turns it into a structured message
 object you can query by header name (`From`, `Reply-To`, `Return-Path`,
 `Authentication-Results`, `Received`, etc.).
@@ -41,13 +41,13 @@ From there, `parser.py` provides:
   first match found.
 - **`extract_ip(received_line)`** / **`extract_all_ips(received_lines)`**
   — pull IPv4 addresses out of the `Received` relay chain. The full chain
-  (not just the first/most-recent hop) is used so the origin server —
-  not just the last internal routing hop — is captured.
+  (not just the first/most-recent hop) is used so the origin server,
+  not just the last internal routing hop, is captured.
 - **`is_brand_spoof(display_name, from_domain)`** — flags a display name
   that references a known brand (PayPal, Microsoft, Amazon, etc.) while
   the actual sending domain does not belong to that brand — the classic
-  typosquat/impersonation pattern (e.g. `"PayPal Security"` sent from
-  `paypa1-support.com`).
+  typosquat/impersonation pattern (e.g. "PayPal Security" sent from
+  paypa1-support.com).
 
 ### 2. Scoring rubric
 
