@@ -77,47 +77,36 @@ Key areas demonstrated:
 ---
 
 ## Skills & Technologies
-
 ### Security Operations & Detection
+- **SIEM Platforms:** Splunk Enterprise, Wazuh
+- **Log Management:** Centralized Ingestion, Universal Forwarders, Data Indexing
+- **Detection Engineering:** SPL (Search Processing Language) Query Optimization, Correlation Rules
+- **Security Event Analysis:** Windows Event Logs, Endpoint Telemetry Monitoring
+- **Incident Response:** Alert Triage, Cyber Attack Investigation, Incident Containment
 
-- Splunk
-- Wazuh
-- SIEM
-- Detection Engineering
-- Security Event Analysis
-- Incident Investigation
-- Alert Triage
-- Incident Response
+### Enterprise Systems & Infrastructure
+- **Windows Architecture:** Active Directory Domain Services, Windows Server Administration
+- **Linux Administration:** Ubuntu Server (Enterprise Deployments, CLI Configuration)
+- **Virtualization:** VMware Workstation Pro, Hypervisor Provisioning & Networking
+- **Endpoint Protection:** Sysmon Architecture (SwiftOnSecurity Framework), Windows Firewall
+- **Windows Security Event Auditing:** Event ID 4624/4625 (Logons), 4720/4732 (Accounts), 1102 (Log Clearing)
 
-### Windows & Active Directory
+### Email Security & Digital Forensics
+- **Header Analysis:** Raw SMTP Routing Vector Analysis (`From`, `Reply-To`, `Return-Path`, `Received` chain)
+- **Email Authentication:** SPF, DKIM, DMARC Alignment Verification
+- **Threat Indicators:** IOC Extraction, Brand Impersonation Vectors, Typosquatting Detection
+- **Mail Formats:** `.eml` Analysis (Gmail, Outlook Metadata Formats)
 
-- Active Directory
-- Windows Server
-- Windows 11
-- Security Event Logs
-- Event ID 4624
-- Event ID 4625
-- PowerShell
-- Windows Firewall
-- Sysmon
+### Offensive Security & Threat Simulation
+- **Network Reconnaissance:** Nmap, Network Mapping, Service Enumeration
+- **Attack Simulation:** RDP Brute-Forcing (`xfreerdp3`), SMB Attack Execution (`CrackMapExec`)
+- **Credential & Protocol Attacks:** Password Auditing (`Hydra`), Network Protocol Exploitation (`Impacket`)
+- **Frameworks:** MITRE ATT&CK Mapping, Kali Linux Operational Frameworks
 
-### Offensive Security
-
-- Kali Linux
-- Hack The Box
-- Nmap
-- Network Enumeration
-- SMB
-- Web Security
-- Attack Simulation
-
-### Programming & Automation
-
-- Python
-- C
-- C#
-- PowerShell
-- SPL
+### Programming, Data Parsing & Automation
+- **Languages:** Python, PowerShell, C, C#
+- **Text Processing:** Regular Expressions (`re.findall()`), Pattern Matching, Text Parsing
+- **Software Engineering:** Modular Code Architecture, Object-Oriented Logic, Automated Regression Testing
 
 ## Portfolio Roadmap
 
