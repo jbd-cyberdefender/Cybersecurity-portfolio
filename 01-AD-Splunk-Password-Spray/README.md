@@ -840,8 +840,8 @@ Information Technology — University of Missouri
 
 Cybersecurity / SOC / Detection Engineering Portfolio
 
-GitHub: `https://github.com/JOSHCODES-MIZ/Cybersecurity-portfolio.git`
+GitHub: [Github](https://github.com/JOSHCODES-MIZ/Cybersecurity-portfolio.git)
 
-LinkedIn: `https://www.linkedin.com/in/joshuabassey-duke/`
+LinkedIn: [LinkedIn](https://www.linkedin.com/in/joshuabassey-duke/)
 
 -
