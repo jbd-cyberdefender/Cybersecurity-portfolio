@@ -842,6 +842,6 @@ Cybersecurity / SOC / Detection Engineering Portfolio
 
 GitHub: `https://github.com/JOSHCODES-MIZ/Cybersecurity-portfolio.git`
 
-LinkedIn: `<YOUR-LINKEDIN-LINK>`
+LinkedIn: `https://www.linkedin.com/in/joshuabassey-duke/`
 
 -
