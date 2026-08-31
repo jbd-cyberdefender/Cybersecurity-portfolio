@@ -723,35 +723,35 @@ The activity triggered a high-severity Splunk alert. The source IP was investiga
 Multiple accounts were targeted from a single source IP.
 
 **Evidence:**  
-`[Password Spray Detection](screenshots/Potential_Active_directory_spray.png)`
+![Password Spray Detection](screenshots/Potential_Active_directory_spray.png)
 
 ### Finding 2 — Authentication Telemetry Confirmed
 
 Windows Security events provided the required source IP and account information.
 
 **Evidence:**  
-`[Authentication Failure](screenshots/Failed_PS.png)`
+![Authentication Failure](screenshots/Failed_PS.png)
 
 ### Finding 3 — Successful Authentication Investigated
 
 Event ID 4624 was reviewed to determine whether any spray attempt resulted in successful authentication.
 
 **Evidence:**  
-`[Event 4624](screenshots/successful_spray_detection.png)`
+![Event 4624](screenshots/successful_spray_detection.png)
 
 ### Finding 4 — Source Contained
 
 The identified source IP was blocked at the Windows Firewall.
 
 **Evidence:**  
-`[Containment Rule](screenshots/Containment-block_ip.png)`
+![Containment Rule](screenshots/Containment-block_ip.png)
 
 ### Finding 5 — Containment Validated
 
 A subsequent attack attempt was conducted after the source was blocked.
 
 **Evidence:**  
-`[Post-Containment Test](screenshots/Attempted_Password_Spray_After_BlockedIP.png)`
+![Post-Containment Test](screenshots/Attempted_Password_Spray_After_BlockedIP.png)
 
 ---
 
