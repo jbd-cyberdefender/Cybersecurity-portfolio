@@ -643,26 +643,7 @@ This would turn the detection into a stronger **possible account compromise** an
 
 ---
 
-# 17. Investigation Timeline
-
-Use this section to document the actual sequence of events.
-
-| Time | Event | Analyst Action |
-|---|---|---|
-| `<TIME>` | Password spray begins | Monitor telemetry |
-| `<TIME>` | Multiple 4625 events appear | Investigate source |
-| `<TIME>` | Multiple accounts targeted | Generate detection |
-| `<TIME>` | Splunk alert fires | Open incident |
-| `<TIME>` | Source identified as `172.16.0.101` | Confirm malicious activity |
-| `<TIME>` | Successful authentication identified | Assess compromise |
-| `<TIME>` | Source IP blocked | Containment |
-| `<TIME>` | Follow-up attack attempted | Validate containment |
-| `<TIME>` | Passwords reset | Remediation |
-| `<TIME>` | Logs reviewed | Close/monitor incident |
-
----
-
-# 18. Evidence Collection
+# 17. Evidence Collection
 
 The following evidence was captured during the project:
 
@@ -686,7 +667,7 @@ The following evidence was captured during the project:
 
 ---
 
-# 19. SOC Incident Report
+# 18. SOC Incident Report
 
 ## Incident Summary
 
@@ -755,7 +736,7 @@ A subsequent attack attempt was conducted after the source was blocked.
 
 ---
 
-# 20. Lessons Learned
+# 19. Lessons Learned
 
 This project demonstrated several practical SOC skills:
 
@@ -800,7 +781,7 @@ Documentation
 
 ---
 
-# 21. Future Improvements
+# 20. Future Improvements
 
 Future versions of this lab could include:
 
@@ -820,7 +801,7 @@ Future versions of this lab could include:
 
 ---
 
-# 22. Project Takeaways
+# 21. Project Takeaways
 
 This lab goes beyond demonstrating that a SIEM can search logs.
 
@@ -832,7 +813,7 @@ That is the workflow this project is intended to demonstrate.
 
 ---
 
-# 23. Author
+# 22. Author
 
 **Joshua Bassey-Duke**
 
